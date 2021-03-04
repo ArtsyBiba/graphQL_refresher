@@ -5,6 +5,7 @@ import LinkList from './LinkList';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import Login from './Login';
 import Search from './Search';
+import Random from './Random';
 
 const App = () => (
   <div className="center w85">
@@ -30,6 +31,7 @@ const App = () => (
           path="/new/:page"
           component={LinkList}
         />
+        <Route exact path="/random" component={Random} />
       </Switch>
     </div>
   </div>
